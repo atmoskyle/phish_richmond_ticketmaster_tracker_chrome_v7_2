@@ -1,0 +1,50 @@
+{
+  "headless": false,
+  "timezone": "America/New_York",
+  "page_load_timeout_seconds": 20,
+  "initial_capture_seconds": 10,
+  "capture_seconds_after_refresh": 8,
+  "expected_facets_responses": 3,
+  "events": [
+    {
+      "name": "MSG N4",
+      "dates": "January 2, 2027",
+      "event_id": "3B00653D12EC1FA9",
+      "url": "https://www.ticketmaster.com/phish-new-york-new-york-01-02-2027/event/3B00653D12EC1FA9"
+    },
+    {
+      "name": "MSG 4-Day",
+      "dates": "Dec 30, 2026\u2013Jan 2, 2027",
+      "event_id": "3B00653D12F81FC8",
+      "url": "https://www.ticketmaster.com/phish-4day-ticket-123012-valid-all-new-york-new-york-12-30-2026/event/3B00653D12F81FC8"
+    }
+  ],
+  "normal_round_seconds": 300,
+  "fast_round_seconds": 180,
+  "fast_poll_window": {
+    "start": "09:55",
+    "end": "11:30"
+  },
+  "between_events_delay_seconds": 20,
+  "poll_jitter_fraction": 0.1,
+  "max_error_backoff_seconds": 3600,
+  "email_retry_seconds": 60,
+  "repeat_positive_alert_minutes": 10,
+  "macos_notification": true,
+  "sound": true,
+  "open_browser_on_alert": true,
+  "positive_capture_dir": "positive_captures",
+  "state_file": "state_v7_2.json",
+  "history_file": "history_v7_2.jsonl",
+  "log_file": "tracker_v7_2.log",
+  "email_alerts": {
+    "enabled": true,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 465,
+    "timeout_seconds": 20,
+    "subject_prefix": "PHISH YEMSG"
+  },
+  "avsc_facets_verify_attempts": 3,
+  "avsc_facets_verify_delay_seconds": 1.0,
+  "avsc_facets_verify_capture_seconds": 5.0
+}
